@@ -243,12 +243,6 @@ pimcore.object.object = Class.create(pimcore.object.abstract, {
         var items = [];
         var user = pimcore.globalmanager.get("user");
 
-        //try {
-        items.push(this.edit.getLayout(this.data.layout));
-        //} catch (e) {
-        //    console.log(e);
-        //}
-
         if (this.data.hasPreview) {
             try {
                 items.push(this.preview.getLayout());
@@ -256,6 +250,12 @@ pimcore.object.object = Class.create(pimcore.object.abstract, {
 
             }
         }
+
+        //try {
+        items.push(this.edit.getLayout(this.data.layout));
+        //} catch (e) {
+        //    console.log(e);
+        //}
 
         if (this.isAllowed("properties")) {
             try {
