@@ -25,8 +25,8 @@ pimcore.object.object = Class.create(pimcore.object.abstract, {
         var user = pimcore.globalmanager.get("user");
 
         //TODO why do we create all this stuff and decide whether we want to display it or not ????????????????
-        this.edit = new pimcore.object.edit(this);
         this.preview = new pimcore.object.preview(this);
+        this.edit = new pimcore.object.edit(this);
         this.properties = new pimcore.element.properties(this, "object");
         this.versions = new pimcore.object.versions(this);
         this.scheduler = new pimcore.element.scheduler(this, "object");

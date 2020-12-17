@@ -86,7 +86,6 @@
     "symfony/swiftmailer-bundle": "^3.2.2",
     "symfony/symfony": "^3.4.26 || ^4.1.12",
     "tijsverkoyen/css-to-inline-styles": "^2.2.1",
-    "twig/extensions": "^1.5",
     "twig/twig": "^2.4",
     "umpirsky/country-list": "^2.0.4",
     "vrana/adminer": "^4.6.3",
